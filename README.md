@@ -13,12 +13,12 @@ This library is still on very early stages, it does something extremely simple s
 
 ### Redis Connection
 
-By default, Philote connects to Redis using the `REDIS_URL` environment variable if you want to connect in a different way you can specify the redis client in code when you initialize your application.
+By default, Philote connects to Redis using the `REDIS_URL` environment variable, if you want to connect in a different way you can specify the redis client in code when you initialize your application.
 
 ```ruby
 
 require 'redic'
-require philote'
+require 'philote'
 
 Philote.redis = Redic.new('redis://localhost:6379')
 ```
