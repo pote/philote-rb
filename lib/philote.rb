@@ -20,7 +20,7 @@ module Philote
   end
 
   def self.publish(channel, data)
-    redis.call('PUBLISH', channel, data)
+    redis.call('PUBLISH', "philote:channel:#{channel}", data)
   end
 
   class AccessKey
